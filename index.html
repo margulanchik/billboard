@@ -1,0 +1,282 @@
+<style type="text/css">
+	/*ссылки*/
+	.link{
+		margin-top: auto; 
+		margin-bottom: auto; 
+		font-size: 20px; 
+		color: white; 
+		margin-left: 26px;
+	}
+
+	/*кнопки*/
+	.button{
+		margin: auto 0; 
+		color: white; 
+		font-size: 15px;
+		width: 115px;
+		margin-left: 2px;
+		transition: 0.3s ease;
+
+		text-align: center;
+	}
+	.button:hover{
+		font-size: 16px;
+		width: 121px;
+		cursor: pointer;
+	}	
+	/*шапка*/
+	.header{
+		background: #b5b5b5; 
+		height: 75px;
+		font-family: arial;
+		text-align: center;
+	}
+	/*центр шапки*/
+	.header-center{
+		background: none; 
+		width: 750px; 
+		height: 100%; 
+		margin-left: auto; 
+		margin-right: auto; 
+		display: flex;
+	}
+
+	/*Логотип*/
+	.logo{
+		background: none; 
+		width: 165px; 
+		display: flex;
+	}
+
+	.logo-image{
+		height: 35px; 
+		margin-top: auto; 
+		margin-bottom: auto;
+	}
+
+	/*блок ссылок*/
+	.link-block{
+		background: none; 
+		width: 425px; 
+		display: flex;
+	}
+	/*блок кнопки подписки*/
+	.block-sub{
+		background: none; 
+		width: 160px;  
+		display: flex;
+	}
+	/*контейнер*/
+	.chart-container{
+		background: none;
+		margin: 0 auto; 
+		height: 1000px; 
+		width: 750px; 
+		font-family: franklin gothic medium; 
+		text-align: center;
+		}
+
+	/*ранк чарта*/
+	.chart-rank{
+
+		width: 95px;
+	}
+	/*информация чарта*/
+	.chart-info{
+
+		width: 425px;
+	}
+	/*кнопка чарта*/
+	.chart-button{
+		width: 125px;
+		display: flex;
+	}
+
+	/*изображение*/
+	.chart-img{
+		height: 95px;
+		width: 100px;
+		border-radius: 10px;
+		margin: auto 0;
+	}
+
+
+	/*Коробка чарта*/
+	.chart-box{
+		height: 115px;
+		margin-top: 10px;
+		display: flex;
+		border-radius: 10px;
+		border: 1px solid;
+		}
+	.chart-sort{
+		width: 750px;
+		height: 60px;
+		display: flex;
+	}
+	/*тексты*/
+	.text{
+		font-size: 22px;
+	}
+
+	/*Задние фоны и цвета*/
+	.bg-danger{
+		background: #dc3545;
+	}
+	.bg-dark{
+		background: #343a40;
+	}
+	.bg-success{
+		background: #28a745;
+	}
+	.bg-info{
+		background: #17a2b8;
+	}
+
+	.text-danger{
+		color: red;
+	}
+	.text-warning{
+		color: yellow;
+	}
+	.text-info{
+		color: cyan;
+	}
+	.text-success{
+		color: green;
+	}
+
+</style>
+
+<!--1. Шапка-->
+<div class="header">
+	<!-- 2. Выравнивание шапки-->
+	<div class="header-center">
+		<!-- 3. Уровень.-->
+		<!-- Логотип-->
+		<div class="logo" >
+			<img class="logo-image" src="logo.png">
+		</div>
+		<!--Ссылки -->
+		<div class="link-block">
+			<a class="link" href="">CHARTS</a>
+			<a class="link" href="">NEWS</a>
+			<a class="link" href="">VIDEO</a>
+			<a class="link" href="">PHOTOS</a>
+		</div>
+		<!--Subscribe button-->
+		<div class="block-sub">
+			<button class="button">Subscribe</button>
+		</div>
+	</div>
+</div>
+
+<!--1. Контейнер-->
+<div class="chart-container">
+	<!--2. Сорт чарта-->
+	<div class="chart-sort">
+		<button class="button bg-danger">This week</button>
+		<button class="button bg-success">Last week</button>
+		<button class="button bg-info">Peak</button>
+		<button class="button bg-dark">Duration</button>
+	</div>
+	<!--3.Чарт-->
+	<div class="chart-box bg-danger">
+		<div class="chart-rank">
+			<p class="text">1</p>
+			<p class="text text-success">Up</p>
+		</div>
+		<div class="chart-info">
+			<p class="text text-info">Savage Love (Laxed - Siren Beat)</p>
+			<p class="text">Jaws 685 X Jason Derulo X BTS</p>
+		</div>
+		<div class="chart-button">
+			<button class="button bg-success">Воспроизвести</button>
+		</div>
+		<img class="chart-img" src="1.jpg">
+	</div>
+	<div class="chart-box bg-success">
+		<div class="chart-rank">
+			<p class="text">2</p>
+			<p class="text text-danger">New</p>
+		</div>
+		<div class="chart-info">
+			<p class="text text-info">Dynamite</p>
+			<p class="text">BTS</p>
+		</div>
+		<div class="chart-button">
+			<button class="button bg-danger">Купить</button>
+		</div>
+		<img class="chart-img" src="2.jpg">
+	</div>
+	<div class="chart-box bg-info">
+		<div class="chart-rank">
+			<p class="text">3</p>
+			<p class="text text-danger">New</p>
+		</div>
+		<div class="chart-info">
+			<p class="text text-info">WAP</p>
+			<p class="text">Cardi B featuring Megan Thee Stallion</p>
+		</div>
+		<div class="chart-button">
+			<button class="button bg-danger">Купить</button>
+		</div>
+		<img class="chart-img" src="3.jpg">
+	</div>
+	<div class="chart-box bg-success">
+		<div class="chart-rank">
+			<p class="text">4</p>
+			<p class="text text-success">Up</p>
+		</div>
+		<div class="chart-info">
+			<p class="text text-info">Mood</p>
+			<p class="text">24kGoldn featuring iann dior</p>
+		</div>
+		<div class="chart-button">
+			<button class="button bg-danger">Купить</button>
+		</div>
+		<img class="chart-img" src="4.jpg">
+	</div>
+	<div class="chart-box bg-info">
+		<div class="chart-rank">
+			<p class="text">5</p>
+			<p class="text text-danger">Down</p>
+		</div>
+		<div class="chart-info">
+			<p class="text text-info">Laugh Now Cry Later</p>
+			<p class="text">Drake featuring Lil Durk</p>
+		</div>
+		<div class="chart-button">
+			<button class="button bg-danger">Купить</button>
+		</div>
+		<img class="chart-img" src="5.jpg">
+	</div>
+	<div class="chart-box bg-danger">
+		<div class="chart-rank">
+			<p class="text">6</p>
+			<p class="text text-warning">New</p>
+		</div>
+		<div class="chart-info">
+			<p class="text text-info">Blinding lights</p>
+			<p class="text">The Weekend</p>
+		</div>
+		<div class="chart-button">
+			<button class="button bg-success">Воспроизвести</button>
+		</div>
+		<img class="chart-img" src="6.jpg">
+	</div>
+	<div class="chart-box bg-danger">
+		<div class="chart-rank">
+			<p class="text">7</p>
+			<p class="text text-success">Up</p>
+		</div>
+		<div class="chart-info">
+			<p class="text text-info">Rockstar</p>
+			<p class="text">DaBaby Featuring Roddy Ricch</p>
+		</div>
+		<div class="chart-button">
+			<button class="button bg-danger">Воспроизвести</button>
+		</div>
+		<img class="chart-img" src="7.jpg">
+	</div>
+</div>
